@@ -1,0 +1,53 @@
+@font-face{
+	font-family:  'Opens Sans';
+	src:  local('Open Sans'), 
+	url('fonts/OpenSans-Regular.ttf') format('ttf'),
+	url('fonts/OpenSans-Regular.otf') format('otf'),
+	url('fonts/OpenSans-Regular.woff') format('woff'),
+	url('fonts/OpenSans-Regular.woff2') format('woff2');
+}
+
+@font-face{
+	font-family:  'Poppins Regular';
+	src:  local('Poppins Regular'), 
+	url(fonts/Poppins-Regular.ttf) format('ttf'),
+	url(fonts/Poppins-Regular.otf) format('otf'),
+	url(fonts/Poppins-Regular.woff) format('woff'),
+	url(fonts/Poppins-Regular.woff2) format('woff2');
+}
+
+@font-face{
+	font-family:  'Poppins Medium';
+	src:  local('Poppins Medium'), 
+	url(fonts/Poppins-Medium.ttf) format('ttf'),
+	url(fonts/Poppins-Medium.otf) format('otf'),
+	url(fonts/Poppins-Medium.woff) format('woff'),
+	url(fonts/Poppins-Medium.woff2) format('woff2');
+}
+
+@font-face{
+	font-family:  'Roboto';
+	src:  local('Roboto'), 
+	url(fonts/Roboto-Regular.ttf) format('ttf'),
+	url(fonts/roboto-regular.otf) format('otf'),
+	url(fonts/roboto-regular.woff) format('woff'),
+	url(fonts/roboto-regular.woff2) format('woff2');
+}
+
+@font-face{
+	font-family:  'Poppins SemiBold';
+	src:  local('Poppins SemiBold'), 
+	url(fonts/Poppins-SemiBold.otf) format('otf'),
+	url(fonts/poppins-semibold.ttf) format('ttf'),
+	url(fonts/Poppins-SemiBold.woff) format('woff'),
+	url(fonts/Poppins-SemiBold.woff2) format('woff2');
+}
+
+@font-face{
+	font-family:  'Poppins Bold';
+	src:  local('Poppins Bold'), 
+	url(fonts/Poppins-Bold.otf) format('otf'),
+	url(fonts/poppins-bold.ttf) format('ttf'),
+	url(fonts/Poppins-Bold.woff) format('woff'),
+	url(fonts/Poppins-Bold.woff2) format('woff2');
+}

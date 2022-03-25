@@ -1,0 +1,901 @@
+a, a:hover{
+	text-decoration: none;
+}
+
+button:hover{
+	cursor:  pointer;
+}
+
+h1{
+	font:  147px/0.83 'Poppins Medium', Arial, sans-serif;
+	text-transform: uppercase;
+	color:  #fff;
+}
+
+h2{
+	font: 35px/1 'Poppins Regular', Arial, sans-serif;
+	color:  #090808;
+	text-transform: uppercase;
+	text-align:  center;
+}
+
+h3{
+	font:  20px/1.5 'Poppins Regular', Arial, sans-serif;
+	color:  #090808;
+	text-transform: uppercase;
+}
+
+.clear{
+	clear:  both;
+}
+
+.template-width{
+	width:  1600px;
+	margin:  0 auto;
+}
+
+.header-central-block{
+	width:  1505px;
+	margin:  0 auto;
+}
+
+.content-central-block{
+	width:  1167px;
+	margin:  0 auto;
+}
+
+header .content-central-block{
+	position:  relative;
+	padding-bottom:  47px;
+}
+
+.red-figure{
+	position:  absolute;
+	left:  0px;
+	top:  0px;
+	z-index: -1;
+}
+
+/******************Верхний логотип и выпадающее меню******************/
+header{
+	min-height:  279px;
+	overflow:  hidden;
+	position: relative;
+	z-index:  0;
+}
+
+.interiors-gallery{
+	width:  5284px;
+	overflow:  hidden;
+	position:  absolute;
+	left:  0px;
+	top:  -14px;
+	z-index:  -1;
+	transform:  translateX(481px);
+	transition: translateX, 0.2s ease-out;
+}
+
+.interiors-gallery li{
+	width:  1321px;
+	height:  920px;
+	float:  left;
+}
+
+.logo{
+	display:  block;
+	width: 147px;
+	float: left;
+	margin-top:  24px;
+}
+
+/************Выпадающий список************/
+.menu-header .burger-menu{
+	float:  right;
+	margin-top:  19px;
+	position:  relative;
+}
+
+.burger-icon{
+	position:  relative;
+	z-index:  1;
+	height:  44px;
+	width:  44px;
+	border-radius:  30px;
+	transition:  background, 0.9s linear, translateX, 0.9s ease;
+}
+
+.burger-icon:hover{
+	cursor:  pointer;
+	background: rgba(255, 255, 255, .35);
+}
+
+.burger-icon img:nth-child(1){
+	position:  absolute;
+	top:  12px;
+	right:  4px;
+}
+
+.burger-icon img:nth-child(2){
+	position:  absolute;
+	top:  20px;
+	right:  4px;
+	transition: translateX, 0.9s ease;
+}
+
+.drop-list{
+	position:  absolute;
+	z-index:  0;
+	top:  -41px;
+	right:  -48px;
+	transform: translateX(206px);
+	padding-top:  91px;
+	background:  #ed1c24;
+	border-bottom-left-radius: 10px;
+	border-left:  3px solid #ed1c24;
+	border-bottom:  3px solid #ed1c24;
+	transition: translateX, 0.9s ease;
+}
+
+.drop-list ul li a{
+	display:  block;
+	font:  16px/1.5 'Poppins Regular', Arial, sans-serif;
+	color:  white;
+	padding:  8px 61px 8px 18px;
+	background:  #ed1c24;
+	width:  123px;
+	text-align:  center;
+}
+
+.drop-list ul li:last-child a{
+	border-bottom-left-radius: 8px;
+}
+
+.drop-list ul li a:hover{
+	background:  white;
+	color:  #ed1c24;
+}
+
+/******************Блок с текстом******************/
+.text-block{
+	margin-top:  190px;
+}
+
+.text-block p{
+	width: 428px;
+	margin:  40px 0 0 9px;
+	font: 16px/1.9 'Poppins Medium', Arial, sans-serif;
+	color:  #fff;
+}
+
+.text-block button{
+	font: 17px 'Poppins Regular', Arial, sans-serif;
+	color:  #090808;
+	text-transform: uppercase;
+	line-height:  2;
+	padding:  10px 42px 7px 32px;
+	background:  #fff;
+	border:  none;
+	border-radius:  5px;
+	margin: 47px 0 0 12px;
+	box-shadow:  0 0 9px 5px rgba(0, 0, 0, 0.1);
+	transition:  scale, .3s cubic-bezier(0.6, 0.2, 0.8, 0.6);
+}
+
+.text-block button:hover{
+	transform:  scale(1.06);
+}
+
+.arrows{
+	margin:  19px 0 0 399px;
+	width:  130px;
+	height:  108px;
+	position:  relative;
+}
+
+.arrow-left, .arrow-right{
+	padding:  0;
+	background:  transparent;
+	border:  0;
+	position:  absolute;
+}
+
+.arrow-left{
+	left:  0px;
+	bottom:  0px;
+}
+
+.arrow-right{
+	right:  0px;
+	top:  0px;
+}
+
+/******************Нумерация внизу страницы******************/
+.number-list1, .number-list2{
+	position:  absolute;
+	bottom:  66px;
+	width:  45px;
+	height:  19.5px;
+	overflow:  hidden;
+	background:  url(../images/numeration-line-through.png) no-repeat 0 9px transparent;
+}
+
+.number-list1{	
+	left:  -186px;
+}
+
+.number-list2{
+	right:  -168px;
+}
+
+.numbers{
+	width:  173px;
+	position:  absolute;
+	left:  0px;
+	top:  0px;
+	text-decoration: line-through;
+	color:  #fff;
+	transform:  translateX(-1px);
+	transition: translateX, 0.2s ease-out;
+}
+
+.numbers li{
+	width:  12.8px;
+	font: 13px/1.5 'Poppins Regular', Arial, sans-serif;
+	color:  #fff;
+	padding-left:  17px;
+	float:  left;
+}
+
+/******************Блок Services******************/
+.header-services{
+	padding-top:  72px;
+}
+
+.text-after-header{
+	margin-top:  7px;
+	color:  #090808;
+}
+
+.text-after-header, .service-offers li p{
+	font:  17px/1.5 'Open Sans', Verdana, sans-serif;	
+	text-align:  center;
+}
+
+.service-offers{
+	overflow:  hidden;
+	margin-top:  54px;
+	padding-bottom:  120px;
+}
+
+.service-offers li{
+	float:  left;
+	width:  209px;
+	margin-right:  110px;
+	text-align:  center;
+}
+
+.service-offers li:nth-child(2) img{
+	padding-left:  19px;
+}
+
+.service-offers li:last-child{
+	margin-right:  0;
+}
+
+.service-offers h3{
+	margin-top:  15px;
+}
+
+.service-offers p{
+	color:  #3f3e3e;
+	margin-top:  11px;
+}
+
+.service-offers a{
+	display:  block;
+	width:  95px;
+	margin:  0 auto;
+	font:  12px/2.5 'Poppins Regular', Arial, sans-serif;
+	color:  #fff;
+	background:  #ed1c24;
+	border:  2px solid #ed1c24;
+	border-radius:  3px;
+	margin-top:  24px;
+	transition:  background, .3s cubic-bezier(0.4, 0.8, 1, 1), color, .3s cubic-bezier(0.4, 0.8, 1, 1);
+}
+
+.service-offers a:hover, .text-wrapper a:hover{
+	background: #fff;
+	color:  #ed1c24;
+}
+
+/******************Блок About US******************/
+main section:nth-child(2){
+	background:  #f3f3f3;
+	padding:  121px 0 71px;
+}
+
+.photos{
+	width: 545px;
+	height:  478px;
+	position:  relative;
+	left:  10px;
+	float:  left;
+}
+
+.design{
+	position:  absolute;
+	z-index:  0;
+	left:  -9px;
+	bottom:  2px;
+}
+
+.sofa{
+	position:  absolute;
+	top:  0px;
+	right:  0px;
+	z-index:  0;
+}
+
+.red-circle, .orange-circle, .black-circle{
+	width:  50px;
+	height:  50px;
+	border-radius:  50%;
+	position:  absolute;
+}
+
+.red-circle{
+	background:  #ed1c24;
+	top:  -24px;
+	left:  -7px;
+}
+
+.orange-circle{
+	background:  #ff7004;
+	bottom:  5px;
+	left:  -7px;
+}
+
+.black-circle{
+	background: #121111;
+	right:  -21px;
+	top:  165px;
+}
+
+.about-us{
+	width:  529px;
+	height:  452px;
+	background: url(../images/about-us-bg.png) no-repeat transparent;
+	float:  right;
+}
+
+.about-us-header{
+	text-align: left;
+}
+
+.text-wrapper{
+	width:  453px;
+	margin:  58px 0 0 58px;
+}
+
+.text-wrapper p{
+	margin-top:  22px;
+	font:  17px/1.8 'Open Sans', Arial, sans-serif;
+}
+
+.text-wrapper a{
+	display:  block;
+	font:  16px/2.6 'Poppins Regular', Arial, sans-serif;
+	color:  #fff;
+	text-align:  center;
+	text-transform: uppercase;
+	background: #ed1c24;
+	border:  2px solid #ed1c24;
+	width:  133px;
+	border-radius:  6px;
+	margin-top: 22px;
+	position:  relative;
+	left:  310px;
+	transition:  background, .3s cubic-bezier(0.4, 0.8, 1, 1), color, .3s cubic-bezier(0.4, 0.8, 1, 1);
+}
+
+/******************Блок Our Concept******************/
+.concept-header{
+	padding-top:  114px;
+}
+
+.kitchen-list{
+	margin-top: 73px;
+	overflow:  hidden;
+	padding-bottom:  100px;
+}
+
+.kitchen-list li{
+	width: 559px;
+	float:  left;
+}
+
+.kitchen-list li:last-child{
+	float:  right;
+}
+
+.kitchen-list li > div{
+	width:  559px;
+	height:  372px;
+	position: relative;
+}
+
+.kitchen-list li > div:hover .glass{
+	opacity:  1;
+}
+
+.glass{
+	opacity:  0;
+	position:  absolute;
+	left:  241px;
+	top:  146px;
+	width:  75px;
+	height:  75px;
+	z-index:  0;
+	background:  rgba(237, 28, 36, .8);
+	border-radius:  50%;
+	box-shadow: 0 0 23px 1px rgba(0, 0, 0, 0.4);
+	transition: scale, .1s cubic-bezier(0.6, 0.2, 0.8, 0.6);
+}
+
+.glass:hover{
+	cursor:  pointer;
+	transform:  scale(1.09);
+}
+
+.glass img{
+	position:  absolute;
+	top:  26px;
+	left:  27px;
+}
+
+.paragraph-header{
+	font: bold 20px/1 'Open Sans', Arial, sans-serif;
+	color: #121111;
+	margin-top: 32px;
+	text-transform: uppercase;
+}
+
+.kitchen-list li .text-after-header{
+	color:  #121111;
+	text-align:  left;
+	margin-top:  18px;
+}
+
+/******************Блок Who We Are******************/
+main section:nth-child(4){
+	background:  url(../images/section-who-bg.jpg);
+	padding: 61px 0 51px;
+}
+
+.who-header{
+	font-family:  'Poppins Medium', Arial, sans-serif;
+	color:  #fff;
+}
+
+.who-header ~ .text-after-header:first-of-type{
+	font-family:  'Poppins Medium', Arial, sans-serif;
+	color:  #fff;
+	text-transform: uppercase;
+	margin-top:  12px;
+}
+
+.who-header ~ .text-after-header:last-of-type{
+	color:  #fff;
+	font: 17px/1.5 'Open Sans', Arial, sans-serif;
+	margin-top:  27px;
+}
+
+.who-header ~ a{
+	display:  block;
+	font: 600 17px/2.7 'Open Sans', Arial, sans-serif;
+	background:  #fff;
+	color:  #000;
+	text-align:  center;
+	width:  168px;
+	margin: 39px auto 0;
+	border-radius:  4px;
+	transition: scale, .25s cubic-bezier(0.6, 0.2, 0.8, 0.6);
+}
+
+.who-header ~ a:hover{
+	transform:  scale(1.06);
+}
+
+/******************Блок Projects******************/
+main section:nth-child(5){
+	position: relative;
+}
+
+.projects-header{
+	padding-top:  110px;
+}
+
+.projects-header + .text-after-header{
+	color:  #121111;
+}
+
+.gallery-wrapper{
+	width:  inherit;
+	height:  373px;
+	position:  relative;
+	overflow: hidden;
+	margin-top:  64px;
+}
+
+.gallery{
+	width:  3000px;
+	position:  absolute;
+	overflow:  hidden;
+	transform:  translateX(-798px); /*right:  -397; left:  397*/
+	transition: translateX, .5s cubic-bezier(0.8, -0.3, 0.3, 0.3);
+}
+
+.gallery li{
+	float:  left;
+	margin-right:  22px;
+	width:  375px;
+	position:  relative;
+	transition:  background-color, .25s cubic-bezier(0.5, 0.5, 0.6, 0.9);
+}
+
+.gallery li:hover{
+	background-color:  rgba(244, 6, 6, .7);
+}
+
+.gallery li img{
+	position: absolute;
+	top:  0px;
+	left:  0px;
+	z-index:  -1;
+}
+
+.gallery a{
+	opacity:  0;
+	display:  block;
+	font: 12px/2 'Open Sans', Arial, sans-serif;
+	padding:  15px 0;
+	width:  163px;
+	color:  #fff;
+	text-transform: uppercase;
+	margin:  150px auto 103px;
+	text-align:  center;
+	border:  1px solid #fff;
+	transition:  opacity, .25s cubic-bezier(0.5, 0.5, 0.6, 0.9), scale, .25s cubic-bezier(0.5, 0.5, 0.6, 0.9);
+}
+
+.gallery li:hover a{
+	opacity:  1;
+}
+
+.gallery a:hover{
+	transform: scale(1.05);
+}
+
+.gallery li p{
+	font: bold 20px/1 'Open Sans', Arial, sans-serif;
+	color:  #fff;
+	text-align:  center;
+	text-transform: uppercase;
+	padding-bottom:  43px;
+}
+
+.button-left, .button-right{
+	position:  absolute;
+	top:  406px;
+	border: #000 2px solid;
+	height:  51px;
+	overflow:  hidden; 
+}
+
+.button-left button, .button-right button{
+	padding:  0;
+	border:  none;
+	outline:  none;
+}
+
+.button-left:hover, .button-right:hover{
+	border: #000 2px solid;
+}
+
+.button-left img, .button-right img{
+	transition:  filter, .23s ease-out;
+}
+
+.button-left:hover img, .button-right:hover img{
+	filter:  grayscale(100%) invert(100%);
+}
+
+.button-left{
+	left:  50px;
+}
+
+.button-right{
+	right:  50px;
+}
+
+/******************Блок Clients******************/
+.clients-header{
+	padding-top:  114px;
+}
+
+.clients-list{
+	margin-top:  96px;
+	position:  relative;
+}
+
+.clients-list li{
+	overflow:  hidden;
+	margin-bottom:  32px;
+	width:  598px;
+}
+
+.clients-list li:nth-child(2){
+	position:  relative;
+	left:  565px;
+}
+
+.clients-list li:last-child{
+	width:  601px;
+	margin-bottom:  0;
+}
+
+.client-photo{
+	width: 162px;
+	height:  116px;
+	position:  relative;
+	float:  left;
+}
+
+.client-photo img:last-child{
+	position:  absolute;
+	bottom:  3px;
+	left:  69px;
+}	
+
+.feedback-text{
+	width:  416px;
+	float:  left;
+	margin-left:  20px;
+}
+
+.clients-list li:last-child .feedback{
+	margin-left:  23px;
+}
+
+.general-mind{
+	font:  17px/1 'Roboto', Arial, sans-serif;
+	color:  #191919;
+	margin-bottom:  6px;
+	text-transform: uppercase;
+}
+
+.general-mind + p{
+	font:  17px/1.5 'Open Sans', Arial, sans-serif;
+	color:  #767676;
+}
+
+.clients-list a{
+	font: 17px/1.5 'Open Sans', Arial, sans-serif;
+	padding:  13px 38px;
+	text-align:  center;
+	text-transform: uppercase;
+	color:  #fff;
+	background:  #ed1c24;
+	position:  absolute;
+	right:  0px;
+	bottom:  28px;
+	border-radius:  3px;
+	border: 2px solid #ed1c24;
+	transition: background, .23s cubic-bezier(0.4, 0.8, 1, 1), color, .23s cubic-bezier(0.4, 0.8, 1, 1);
+}
+
+.clients-list a:hover{
+	color: #ed1c24;
+	background: #fff;
+}
+
+/******************Блок Clients******************/
+main section:last-child{
+	padding:  76px 0 92px;
+	background:  rgba(237, 28, 36, 0.7);
+	position:  relative;
+	overflow: hidden;
+}
+
+.contacts-bg{
+	position:  absolute;
+	top:  0px;
+	left:  0px;
+	z-index:  -1;
+}
+
+.contacts-header{
+	font: 600 35px/1 'Roboto', Arial, sans-serif;
+	color:  #fff;
+	text-transform: uppercase;
+	text-align:  left;
+}
+
+.contact-form{
+	width:  598px;
+	float:  left;
+	margin-top:  56px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"],.contact-form input[type="number"], textarea{
+	display:  block;
+	width:  559px;
+	font:  16px/1.5 'Poppins Regular', Arial, sans-serif;
+	padding:  15px 24px 15px 15px;
+	color: #292929; 
+	margin-bottom:  30px;
+	border-radius:  4px;
+	outline:  none;
+	border:  none;
+}
+
+.contact-form textarea{
+	height: 85px;
+	overflow:  auto;
+	margin-bottom: 49px;
+}
+
+.contact-form ::placeholder{
+	color:  #807e7e;
+	opacity: 1;
+}
+
+.contact-form input[type="submit"]{
+	font: 20px/2.7 'Poppins SemiBold', Arial, sans-serif;
+	color: #fff;
+	padding:  0 45px;
+	border:  3.5px solid #fff;
+	background:  none;
+	border-radius:  1px;
+	transition: color, .25s ease-out, background, .25s ease-out;
+}
+
+.contact-form input[type="submit"]:hover{
+	cursor:  pointer;
+	color:  #000;
+	background:  #fff;
+}
+
+::-webkit-input-placeholder{
+	color:  #989696;
+}
+
+::-moz-placeholder{ 
+	color:  #989696;
+}
+
+.map{
+	float:  right;
+	margin-top:  56px;
+}
+
+/******************Footer******************/
+footer section:nth-child(1){
+	background: #1c1b2d;
+	color:  #fff;
+	padding:  68px 0 62px 0;
+}
+
+.navigation{
+	overflow:  hidden;
+}
+
+.navigation > li{
+	float:  left;
+	margin-right:  123px;
+	margin-top:  7px;
+}
+
+.navigation > li:first-child{
+	margin-right: 68px;
+	margin-top:  0;
+}
+
+.navigation > li:last-child{
+	margin-right: 0;
+}
+
+.header-bold{
+	font: 36px/1 'Poppins Bold', Arial, sans-serif;
+	margin-bottom: 20px;
+}
+
+.footer-text{
+	font: 17px/1.8 'Poppins Regular', Arial, sans-serif;
+	width:  199px;
+}
+
+.header-regular{
+	font:  30px/1 'Poppins Regular', Arial, sans-serif;
+	margin-bottom:  20px;
+}
+
+.footer-links a{
+	width:  190px;
+	color:  #fff;
+}
+
+.footer-links a:hover{
+	text-decoration: underline;
+}
+
+.subscribe-form{
+	width:  516px;
+	float:  right;
+	position:  relative;
+	border-bottom:  1px solid #fff;
+}
+
+.subscribe-form input[type="email"]{
+	font: 16px/2.5 'Poppins Regular', Arial, sans-serif;
+	padding:  0 100px 0 4px;
+	color: #fff;
+	border:  none;
+	outline:  none;
+	background:  none;
+}
+
+.subscribe-form input[type="submit"]{
+	position:  absolute;
+	right:  0px;
+	top:  14px;
+	z-index:  1;
+	font:  16px/1 'Poppins Bold', Arial, sans-serif;
+	text-transform: uppercase;
+	color:  #fff;
+	background:  none;
+	border:  none;
+	padding:  0 2px 0 0;
+	transition:  scale, 0.3s ease-out;
+}
+
+.subscribe-form input[type="submit"]:hover{
+	cursor:  pointer;
+	transform:  scale(1.05);
+}
+
+::-moz-placeholder, ::-webkit-input-placeholder{
+	color:  #4d4c4c;
+}
+
+/******************Footer-socials******************/
+footer section:last-child{
+	padding: 28px 0 23px 0;
+}
+
+.icons{
+	overflow:  hidden;
+	width:  149px;
+	margin:  0 auto;
+}
+
+.icons li{
+	width: 32px;
+	height:  32px;
+	float:  left;
+	margin-right:  7px;
+}
+
+.icons li:last-child{margin-right: 0;}
+
+.icons li:hover img{
+	filter: grayscale(100%) sepia(200%) hue-rotate(180deg) saturate(800%);
+}
+
+.icons + p{
+	text-align:  center;
+	font: 17px/1.9 'Poppins Regular', Arial, sans-serif;
+	color: #292929;
+	margin-top:  12px;
+}
